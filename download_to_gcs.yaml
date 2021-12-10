@@ -1,0 +1,12 @@
+steps:
+  - id: download
+    name: gcr.io/cloud-builders/wget
+    args: ['-q', '-O', '/workspace/archive.zip', $_NSUL_URL]
+  - id: unzip
+    name: busybox
+    entrypoint: unzip
+    args: ['/workspace/archive.zip', '-d', '/workspace/decompressed']
+  - id: upload
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gsutil
+    args: ['-m', 'cp', '-r', '/workspace/decompressed/', 'gs://${_BUCKET_NAME}/nsul/decompressed/${_PUBLICATION_DATE}/']
