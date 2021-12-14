@@ -1,0 +1,175 @@
+[
+    {
+        "mode": "REQUIRED",
+        "name": "uprn",
+        "type": "INTEGER",
+        "description": "Unique property reference number."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "gridgb1e",
+        "type": "INTEGER",
+        "description": "OS grid reference Easting to 1 metre resolution."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "gridgb1n",
+        "type": "INTEGER",
+        "description": "OS grid reference Northing to 1 metre resolution."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "postcode",
+        "type": "STRING"
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "oa11cd",
+        "type": "STRING",
+        "description": "2011 Census Output Area."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "cty21cd",
+        "type": "STRING",
+        "description": "Current county to which the UPRN has been assigned. Pseudo codes are included for English UAs, Wales and Scotland."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "ced17cd",
+        "type": "STRING",
+        "description": "County Electoral Division"
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "lad21cd",
+        "type": "STRING",
+        "description": "Local Authority District (LAD): unitary authority (UA)/non-metropolitan district (NMD)/metropolitan district (MD)/London borough (LB)/council area (CA)."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "wd19cd",
+        "type": "STRING",
+        "description": "(Electoral) ward/division."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "hlth19cd",
+        "type": "STRING",
+        "description": "Former Strategic Health Authority (SHA)/Local Health Board (LHB)/Health Board (HB)"
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "ctry11cd",
+        "type": "STRING",
+        "description": "GB country."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "rgn11cd",
+        "type": "STRING",
+        "description": "Region (former GOR)."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "pcon11cd",
+        "type": "STRING",
+        "description": "Westminster parliamentary constituency."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "eer11cd",
+        "type": "STRING",
+        "description": "European Electoral Region (EER)."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "ttwa15cd",
+        "type": "STRING",
+        "description": "Travel to Work Area (TTWA)."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "itl21cd",
+        "type": "STRING",
+        "description": "ITL area."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "npark16cd",
+        "type": "STRING",
+        "description": "National Park."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "lsoa11cd",
+        "type": "STRING",
+        "description": "2011 Census Lower Layer Super Output Area (LSOA) for England and Wales or Data Zone (DZ) for Scotland."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "msoa11cd",
+        "type": "STRING",
+        "description": "2011 Census Middle Layer Super Output Area (MSOA) for England and Wales or Intermediate Zone (IZ) for Scotland."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "wz11cd",
+        "type": "STRING",
+        "description": "2011 Census Workplace Zone for England and Wales. Pseudo code (S99999999) for Scotland."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "ccg17cd",
+        "type": "STRING",
+        "description": "Clinical Commissioning Group (CCG) for England, Local Health Board (LHB) for Wales or Community Health Partnership (CHP) for Scotland"
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "bua11cd",
+        "type": "STRING",
+        "description": "Built-up area in England and Wales. Pseudo codes are included for those OAs not classed as 'built-up' and cross-border codes are included for areas straddling the English/Welsh border. A pseudo code is also included for Scotland."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "buasd11cd",
+        "type": "STRING",
+        "description": "Built-up Area Sub-division (BUASD) in England and Wales. Pseudo codes are included for those OAs not classed as 'built-up' and cross-border codes are included for areas straddling the English/Welsh border. A pseudo code is also included for Scotland."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "ruc11ind",
+        "type": "STRING",
+        "description": "2011 Census rural-urban classification of OAs for England, Wales and Scotland"
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "oac11ind",
+        "type": "STRING",
+        "description": "2011 Census Output Area classification (OAC)."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "lep17cd1",
+        "type": "STRING",
+        "description": "Primary Local Enterprise Partnership (LEP) code for each English UPRN. Pseudo codes for rest of GB."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "lep17cd2",
+        "type": "STRING",
+        "description": "Secondary Local Enterprise Partnership (LEP) code for each English UPRN. Pseudo codes for rest of GB."
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "pfa15cd",
+        "type": "STRING",
+        "description": "Police Force Area (PFA)"
+    },
+    {
+        "mode": "REQUIRED",
+        "name": "imd19ind",
+        "type": "INTEGER",
+        "description": "Index of Multiple Deprivation (IMD) for the LSOA of each UPRN, where 1 is the most deprived. A zero is included for Scotland."
+    }
+]

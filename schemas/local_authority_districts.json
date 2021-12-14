@@ -1,0 +1,18 @@
+[
+    {
+        "name": "lad20cd",
+        "description": "Local authority district code",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "name": "local_authority_district_name",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "name": "local_authority_district_name_welsh",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    }
+]

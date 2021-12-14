@@ -18,3 +18,7 @@ Parameters:
 * `NSUL_URL`: URL to file. For example, in the [November 2021 edition](https://geoportal.statistics.gov.uk/datasets/national-statistics-uprn-lookup-november-2021/about), the URL is `https://www.arcgis.com/sharing/rest/content/items/c9405798d9fa41fcb52e07cb79b431d5/data`.
 * `BUCKET_NAME`: name of the datasets bucket. See the output of the latest `terraform apply` in the [`infrastructure`](https://github.com/centrefornetzero/infrastructure) repo.
 * `PUBLICATION_DATE`: in `YYYY-MM-DD` format, e.g. `2021-11-01` for the November 2021 edition.
+
+## Uploading to BigQuery
+
+Run `BUCKET_PATH="gs://..." ./bq_upload.sh` where `BUCKET_PATH` is the path to the decompressed files on GCS.
