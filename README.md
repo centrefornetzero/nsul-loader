@@ -1,11 +1,12 @@
 # nsul-loader
 
-Load the ONS Nationasl Statistics UPRN Lookup dataset into BigQuery.
+Load the ONS National Statistics UPRN Lookup dataset into BigQuery.
 
 ## Downloading the data to GCS
 
 The file is about ~400MB compressed but 12.5GB decompressed.
-You can use Cloud Build to download the data from ONS and upload it to GCS.
+You can use Cloud Build to download the data from ONS and upload it to GCS on GCP.
+No local download required!
 
 ```
 gcloud builds submit --no-source --config download_to_gcs.yaml \

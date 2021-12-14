@@ -5,8 +5,8 @@ steps:
   - id: unzip
     name: busybox
     entrypoint: unzip
-    args: ['/workspace/archive.zip', '-d', '/workspace/decompressed']
+    args: ['/workspace/archive.zip', '-d', '/workspace']
   - id: upload
     name: gcr.io/google.com/cloudsdktool/cloud-sdk
     entrypoint: gsutil
-    args: ['-m', 'cp', '-r', '/workspace/decompressed/', 'gs://${_BUCKET_NAME}/nsul/decompressed/${_PUBLICATION_DATE}/']
+    args: ['-m', 'cp', '-r', '/workspace/Data', '/workspace/Documents', 'gs://${_BUCKET_NAME}/nsul/decompressed/${_PUBLICATION_DATE}/']
