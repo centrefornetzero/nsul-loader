@@ -21,4 +21,10 @@ Parameters:
 
 ## Uploading to BigQuery
 
-Run `BUCKET_PATH="gs://..." ./bq_upload.sh` where `BUCKET_PATH` is the path to the decompressed files on GCS.
+```
+BUCKET_PATH="gs://..." EDITION_YEAR_MONTH="YYYY-MM" ./bq_upload.sh
+```
+
+Parameters:
+* `BUCKET_PATH`: path to the decompressed files on GCS.
+* `EDITION_YEAR_MONTH`: edition of NSUL, e.g. `2021-11` for November 2021.
