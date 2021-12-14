@@ -14,7 +14,7 @@ fi;
 set -eu
 
 LOCATION="EU"
-DATASET="nsul"
+DATASET="src_nsul"
 
 bq --location "$LOCATION" --project_id "$PROJECT_ID" load \
     --source_format=CSV --skip_leading_rows=1 \
