@@ -18,12 +18,12 @@ DATASET="src_nsul"
 
 bq --location "$LOCATION" --project_id "$PROJECT_ID" load \
     --source_format=CSV --skip_leading_rows=1 \
-    "${DATASET}.src_${EDITION_YEAR_MONTH}_addresses" \
+    "${DATASET}.${EDITION_YEAR_MONTH}_addresses" \
     "$BUCKET_PATH/Data/*.csv" \
     schemas/addresses.json
 
 bq --location "$LOCATION" --project_id "$PROJECT_ID" load \
     --source_format=CSV --skip_leading_rows=1 \
-    "${DATASET}.src_${EDITION_YEAR_MONTH}_local_authority_districts" \
+    "${DATASET}.${EDITION_YEAR_MONTH}_local_authority_districts" \
     "$BUCKET_PATH/Documents/LAD names and codes UK as at 12_20.csv" \
     schemas/local_authority_districts.json
