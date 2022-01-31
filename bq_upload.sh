@@ -25,5 +25,5 @@ bq --location "$LOCATION" --project_id "$PROJECT_ID" load \
 bq --location "$LOCATION" --project_id "$PROJECT_ID" load \
     --source_format=CSV --skip_leading_rows=1 \
     "${DATASET}.${EDITION_YEAR_MONTH}_local_authority_districts" \
-    "$BUCKET_PATH/Documents/LAD names and codes UK as at 12_20.csv" \
+    "$BUCKET_PATH/Documents/LAD names and codes UK as at 04_21.csv" \
     schemas/local_authority_districts.json

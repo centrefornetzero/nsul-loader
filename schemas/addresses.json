@@ -36,7 +36,7 @@
     },
     {
         "mode": "REQUIRED",
-        "name": "ced17cd",
+        "name": "ced21cd",
         "type": "STRING",
         "description": "County Electoral Division"
     },
@@ -48,7 +48,7 @@
     },
     {
         "mode": "REQUIRED",
-        "name": "wd19cd",
+        "name": "wd21cd",
         "type": "STRING",
         "description": "(Electoral) ward/division."
     },
@@ -120,7 +120,7 @@
     },
     {
         "mode": "REQUIRED",
-        "name": "ccg17cd",
+        "name": "ccg19cd",
         "type": "STRING",
         "description": "Clinical Commissioning Group (CCG) for England, Local Health Board (LHB) for Wales or Community Health Partnership (CHP) for Scotland"
     },

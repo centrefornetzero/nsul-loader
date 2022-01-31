@@ -1,6 +1,6 @@
 [
     {
-        "name": "lad20cd",
+        "name": "lad21cd",
         "description": "Local authority district code",
         "mode": "REQUIRED",
         "type": "STRING"
