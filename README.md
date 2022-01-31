@@ -1,10 +1,10 @@
 # nsul-loader
 
-Load the ONS National Statistics UPRN Lookup dataset into BigQuery.
+Load address and local authority district tables from the [ONS National Statistics UPRN Lookup](https://www.ons.gov.uk/methodology/geography/geographicalproducts/nationalstatisticsaddressproducts) (NSUL) dataset into BigQuery.
 
-## Downloading the data to GCS
+## 1. Downloading the data to Google Cloud Storage
 
-The file is about ~400MB compressed but 12.5GB decompressed.
+The file is about 400MB compressed but 12.5GB decompressed.
 You can use Cloud Build to download the data from ONS and upload it to GCS on GCP.
 No local download required!
 
@@ -19,7 +19,7 @@ Parameters:
 * `BUCKET_NAME`: name of the datasets bucket. See the output of the latest `terraform apply` in the [`infrastructure`](https://github.com/centrefornetzero/infrastructure) repo.
 * `PUBLICATION_DATE`: in `YYYY-MM-DD` format, e.g. `2021-11-01` for the November 2021 edition.
 
-## Uploading to BigQuery
+## 2. Uploading to BigQuery
 
 ```
 BUCKET_PATH="gs://..." EDITION_YEAR_MONTH="YYYY-MM" ./bq_upload.sh
